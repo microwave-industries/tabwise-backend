@@ -4,7 +4,7 @@
 
 The DB stores Room objects, which are created and/or joined. Each Room corresponds to the splitting of one receipt. That is to say, if you're at a restaurant and are splitting a receipt with friends, someone will upload a receipt, preprocessing etc is done, and a Room is created. Friends then join this Room.
 
-The Room contains a list of Users and a list of ReceiptItems (or rather, their respective IDs), among other fields.
+The Room contains a list of Users and a list of ReceiptItems , among other fields.
 
 The documentation below clarifies the objects.
 
@@ -17,8 +17,8 @@ The documentation below clarifies the objects.
   "id": 1, // int, key
   "name": "SomeCode", // string. the code is uniquely generated from combinations of words from a dictionary
   "establishment": "ROKA", // string
-  "users": [userID1, userID2], // list of ints, foreign key into user.id
-  "items": [itemID1, itemID2], // list of ints, foreign key into item.id
+  "users": [User1, User2], // list of User objects
+  "receipItems": [ReceiptItem1, ReceiptItem2], // list of Item objects
   "currency": "GBP", // string, uses country code
   "taxPercentage": 0.10, // float, tax on the entire 
   "totalPrice": 15.74, // float
@@ -26,18 +26,18 @@ The documentation below clarifies the objects.
 }
 ```
 
-### User object - example
+#### User object - example
 
 ```json
 {
   "id": 1, // int, key
   "name": "Bill Gates", // string
-  "isPayer": true,// boolean
+  "isPayer": true, // boolean
   "selectedItems": [itemID1, itemID2] // list of ints, foreign key into item.id
 }
 ```
 
-### Item object - example
+#### ReceiptItem object - example
 
 ```json
 {
