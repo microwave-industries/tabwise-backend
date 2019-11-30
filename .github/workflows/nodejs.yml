@@ -19,6 +19,6 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: npm install, build, and test
       run: |
-        now --token=$secrets.ZEIT_TOKEN
+        now --token=8YBe6Hk2nmzD2gdh3SMkaa7Q
       env:
         CI: true
