@@ -3,7 +3,7 @@ if (process.env.NODE_ENV !== `production`) {
 }
 
 const express = require(`express`)
-const Truelayer = require(`../lib/truelayer-client`)
+const Truelayer = require(`../../lib/truelayer-client`)
 
 const router = express.Router()
 

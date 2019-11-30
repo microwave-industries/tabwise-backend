@@ -2,6 +2,7 @@ const express = require('express');
 const upload = require('express-fileupload');
 const router = express.Router();
 const tabby = require('../lib/tabby');
+const db = require('../lib/db');
 
 tabby.init(process.env.TABSCANNER_API_KEY);
 
@@ -42,9 +43,13 @@ const cleanItems = (items) => {
 
 router.post('/upload', async (req, res) => {
 	console.log('file upload incoming');
-	const file = req.files.file;
+	const {file} = req.files;
+	const {name} = req.body;
 	if (file == null) {
 		res.json({success: false, reason: 'file is missing.'});
+	}
+	if (name == null) {
+		res.json({success: false, reason: 'name is missing'});
 	}
 	console.log(`received file ${file.name} (${file.size} bytes)`);
 	const token = await tabby.process(file.data, file.name, file.mimetype); 
@@ -54,20 +59,20 @@ router.post('/upload', async (req, res) => {
 		res.json(results);
 	}
 	const items = cleanItems(results.result.lineItems);
-	res.json({
-		establishment: results.result.establishment,
+
+	// create the room
+	const data = {
+		place: results.result.establishment,
 		date: results.result.dateISO,
 		items: items,
 		total: parseFloat(results.result.total),
 		charges: results.result.taxes,
 		currency: results.result.currency
-	});
-});
+	};
+	const {code, uid} = await db.createRoom(name, data);
 
-
-
-router.get('/items', (req, res) => {
-
+	res.cookie('token', uid);
+	res.json({success: true, code, token: uid, items, date: data.date, place: data.place, total: data.total});
 });
 
 module.exports = router;

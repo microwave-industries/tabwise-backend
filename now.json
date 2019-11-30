@@ -1,0 +1,21 @@
+{
+    "version": 2,
+    "name": "tabwise-api",
+    "builds": [{
+        "src": "index.js",
+        "use": "@now/node-server"
+    }],
+    "routes": [{
+        "headers": {
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+            "Access-Control-Allow-Headers": "X-Requested-With, Content-Type, Accept"
+        },
+        "src": "/.*",
+        "dest": "/index.js"
+    }],
+    "env": {
+        "TABSCANNER_API_KEY": "wQiFSzidoTugHYCAEZCd2NZ2eirVYf5VycOjzBA7BH7QXcjkjH68xso9dUL2cqxN",
+				"MONGO_CONNECTION_STRING": "mongodb+srv://testUser:WtGCKOB8oArtY0kH@cluster0-bchfk.mongodb.net/test?retryWrites=true&w=majority"
+    }
+}
