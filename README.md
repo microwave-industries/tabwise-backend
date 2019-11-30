@@ -22,12 +22,12 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[![Contributors][contributors-shield]][contributors-url]
+<!-- [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+[![LinkedIn][linkedin-shield]][linkedin-url] -->
 
 
 
@@ -42,15 +42,6 @@
 
   <p align="center">
     Scan it, say it, split it!
-    <br />
-    <a href="https://github.com/hivestrung/hack-kings-6.0"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/hivestrung/hack-kings-6.0">View Demo</a>
-    ·
-    <a href="https://github.com/hivestrung/hack-kings-6.0/issues">hack-kings-6.0rt Bug</a>
-    ·
-    <a href="https://github.com/hivestrung/hack-kings-6.0/issues">Request Feature</a>
   </p>
 </p>
 
