@@ -30,6 +30,7 @@ The documentation below clarifies the objects.
 
 ```json
 {
+
   "uid": 1, // int, key
   "name": "Bill Gates", // string
   "isPayer": true, // boolean
@@ -45,6 +46,6 @@ The documentation below clarifies the objects.
   "name": "Apfelstrudel", // string, will be descClean from TabScanner
   "qty": 2, // int
   "price": 6.99, // float
-  "totalPrice": 13.98 // float, is equal to price*qty*(1-discount)
+  "totalPrice": 13.98 // float, is equal to price*qty
 }
 ```
