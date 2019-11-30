@@ -1,14 +1,16 @@
 const express = require('express');
-const generate = require('project-name-generator');
 const router = express.Router();
 
-router.get('/create', (req, res) => {
-	// generating room names: 
-	// generate().dashed
-});
+const db = require('../lib/db');
 
-router.get('/join', (req, res) => {
+router.get('/join', async (req, res) => {
+	const {code, name} = req.query;
 
+	const {uid, items, place, date, total} = await db.joinRoom(code, name);
+	
+	//set cookie
+	res.cookie('token', uid);
+	res.json({success: true, token: uid, items, place, date, total});
 });
 
 module.exports = router;
