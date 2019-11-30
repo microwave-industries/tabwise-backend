@@ -14,7 +14,7 @@ The documentation below clarifies the objects.
 
 ```json
 {
-  "id": 1, // int, key
+  "_id": 1, // int, key
   "name": "SomeCode", // string. the code is uniquely generated from combinations of words from a dictionary
   "establishment": "ROKA", // string
   "users": [User1, User2], // list of User objects
@@ -30,7 +30,7 @@ The documentation below clarifies the objects.
 
 ```json
 {
-  "id": 1, // int, key
+  "_id": 1, // int, key
   "name": "Bill Gates", // string
   "isPayer": true, // boolean
   "selectedItems": [itemID1, itemID2] // list of ints, foreign key into item.id
@@ -41,7 +41,7 @@ The documentation below clarifies the objects.
 
 ```json
 {
-  "id": 1, // int, key
+  "_id": 1, // int, key
   "name": "Apfelstrudel", // string, will be descClean from TabScanner
   "qty": 2, // int
   "price": 6.99, // float
