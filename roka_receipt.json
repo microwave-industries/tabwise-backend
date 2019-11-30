@@ -1,0 +1,258 @@
+{
+   message: "SUCCESS: Result available",
+   status: "done",
+   status_code: 3,
+   result: {
+      establishment: "ROKA",
+      validatedEstablishment: false,
+      date: "2019-10-21 13:50:00",
+      total: "106.330",
+      url: "",
+      phoneNumber: "",
+      paymentMethod: "",
+      address: "",
+      cash: "0.000",
+      change: "0.000",
+      validatedTotal: true,
+      subTotal: "93.800",
+      validatedSubTotal: true,
+      tax: "12.530",
+      taxes: [
+         12.53
+      ],
+      discount: "0.000",
+      rounding: "0.000",
+      discounts: [],
+      lineItems: [
+         {
+            qty: 0,
+            desc: "2x lunch menu",
+            unit: "",
+            price: "0.000",
+            symbols: [],
+            discount: "0.000",
+            lineType: "",
+            descClean: "2lunch menu",
+            lineTotal: "66.000",
+            productCode: "",
+            customFields: []
+         },
+         {
+            qty: 0,
+            desc: "1x Im dessert",
+            unit: "",
+            price: "0.000",
+            symbols: [],
+            discount: "0.000",
+            lineType: "",
+            descClean: "1Im dessert",
+            lineTotal: "6.000",
+            productCode: "",
+            customFields: [],
+            supplementaryLineItems: {
+               above: [],
+               below: [
+                  {
+                     qty: 0,
+                     desc: "sm hokkaido cheesecake",
+                     unit: "",
+                     price: "0.000",
+                     symbols: [],
+                     discount: "0.000",
+                     lineType: "",
+                     descClean: "sm hokkaido cheesecake",
+                     lineTotal: "0.000",
+                     confidence: "0.500",
+                     productCode: "",
+                     customFields: []
+                  }
+               ]
+            }
+         },
+         {
+            qty: 0,
+            desc: "1x Im dessert",
+            unit: "",
+            price: "0.000",
+            symbols: [],
+            discount: "0.000",
+            lineType: "",
+            descClean: "1Im dessert",
+            lineTotal: "6.000",
+            productCode: "",
+            customFields: [],
+            supplementaryLineItems: {
+               above: [
+                  {
+                     qty: 0,
+                     desc: "sm hokkaido cheesecake",
+                     unit: "",
+                     price: "0.000",
+                     symbols: [],
+                     discount: "0.000",
+                     lineType: "",
+                     descClean: "sm hokkaido cheesecake",
+                     lineTotal: "0.000",
+                     confidence: "0.500",
+                     productCode: "",
+                     customFields: []
+                  }
+               ],
+               below: [
+                  {
+                     qty: 0,
+                     desc: "sm chocolate pudding",
+                     unit: "",
+                     price: "0.000",
+                     symbols: [],
+                     discount: "0.000",
+                     lineType: "",
+                     descClean: "sm chocolate pudding",
+                     lineTotal: "0.000",
+                     confidence: "0.500",
+                     productCode: "",
+                     customFields: []
+                  }
+               ]
+            }
+         },
+         {
+            qty: 0,
+            desc: "1x golden temple",
+            unit: "",
+            price: "0.000",
+            symbols: [],
+            discount: "0.000",
+            lineType: "",
+            descClean: "1golden temple",
+            lineTotal: "7.900",
+            productCode: "",
+            customFields: [],
+            supplementaryLineItems: {
+               above: [
+                  {
+                     qty: 0,
+                     desc: "sm chocolate pudding",
+                     unit: "",
+                     price: "0.000",
+                     symbols: [],
+                     discount: "0.000",
+                     lineType: "",
+                     descClean: "sm chocolate pudding",
+                     lineTotal: "0.000",
+                     confidence: "0.500",
+                     productCode: "",
+                     customFields: []
+                  }
+               ],
+               below: []
+            }
+         },
+         {
+            qty: 0,
+            desc: "1x lychee and dragon",
+            unit: "",
+            price: "0.000",
+            symbols: [],
+            discount: "0.000",
+            lineType: "",
+            descClean: "1lychee and dragon",
+            lineTotal: "6.900",
+            productCode: "",
+            customFields: []
+         },
+         {
+            qty: 0,
+            desc: "1x savitri trust",
+            unit: "",
+            price: "0.000",
+            symbols: [],
+            discount: "0.000",
+            lineType: "",
+            descClean: "1savitri trust",
+            lineTotal: "1.000",
+            productCode: "",
+            customFields: []
+         }
+      ],
+      summaryItems: [
+         {
+            qty: 0,
+            desc: "Item Total",
+            unit: "",
+            price: "0.000",
+            symbols: [],
+            discount: "0.000",
+            lineType: "SubTotal",
+            descClean: "Item Total",
+            lineTotal: "93.800",
+            productCode: "",
+            customFields: []
+         },
+         {
+            qty: 0,
+            desc: "Optional Service Charge 13.50% £",
+            unit: "",
+            price: "0.000",
+            symbols: [],
+            discount: "0.000",
+            lineType: "Tax",
+            descClean: "Optional Service Charge 13.50% £",
+            lineTotal: "12.530",
+            productCode: "",
+            customFields: []
+         },
+         {
+            qty: 0,
+            desc: "Total £",
+            unit: "",
+            price: "0.000",
+            symbols: [],
+            discount: "0.000",
+            lineType: "Total",
+            descClean: "Total £",
+            lineTotal: "106.330",
+            productCode: "",
+            customFields: []
+         }
+      ],
+      subTotalConfidence: 0.99,
+      taxesConfidence: [
+         0.99
+      ],
+      discountConfidences: [],
+      totalConfidence: 0.99,
+      dateConfidence: 0.95,
+      establishmentConfidence: 0.8,
+      cashConfidence: 0,
+      changeConfidence: 0,
+      roundingConfidence: 0,
+      customFields: {
+         URL: "",
+         Country: "GBR",
+         Currency: "GBP",
+         VATNumber: "175 767 559",
+         ExpenseType: "",
+         PaymentMethod: "",
+         CardLast4Digits: ""
+      },
+      documentType: "receipt",
+      currency: "GBP",
+      barcodes: [],
+      dateISO: "2019-10-21T13:50:00",
+      addressNorm: {
+         city: "",
+         state: "",
+         number: "",
+         street: "",
+         suburb: "",
+         country: "",
+         building: "",
+         postcode: ""
+      },
+      expenseType: "None",
+      otherData: []
+   },
+   success: true,
+   code: 202
+}
