@@ -20,6 +20,6 @@ jobs:
     - name: npm install, build, and test
       run: |
         npm i -g now
-        now --token=${{ secrets.ZEIT_TOKEN }}
+        now --token=$secrets.ZEIT_TOKEN
       env:
         CI: true
