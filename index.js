@@ -14,4 +14,4 @@ app.use('/mm', mm);
 app.use('/receipt', receipt);
 app.use('/claim', claim);
 
-app.listen(port, () => "server is listening.");
+app.listen(port, () => console.log(`server is listening on :${port}.`));
