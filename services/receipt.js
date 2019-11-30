@@ -27,9 +27,13 @@ const cleanItems = (items) => {
 	delete x.discount;
 	delete x.productCode;
 	delete x.customFields;
+	delete x.lineType;
 
-	if (x.supplementaryLineItems != null && x.supplementaryLineItems.below != null) {
-		x.subItems = x.supplementaryLineItems.below;
+	if (x.supplementaryLineItems != null && x.supplementaryLineItems.below.length > 0) {
+		x.subItems = x.supplementaryLineItems.below.map(x => {return {
+			desc: x.desc,
+			lineTotal: parseFloat(x.lineTotal)
+		}});
 	}
 	delete x.supplementaryLineItems;
 	return x;
@@ -50,7 +54,14 @@ router.post('/upload', async (req, res) => {
 		res.json(results);
 	}
 	const items = cleanItems(results.result.lineItems);
-	res.json(items);
+	res.json({
+		establishment: results.result.establishment,
+		date: results.result.dateISO,
+		items: items,
+		total: parseFloat(results.result.total),
+		charges: results.result.taxes,
+		currency: results.result.currency
+	});
 });
 
 
