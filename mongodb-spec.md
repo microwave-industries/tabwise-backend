@@ -18,9 +18,9 @@ The documentation below clarifies the objects.
   "name": "SomeCode", // string. the code is uniquely generated from combinations of words from a dictionary
   "establishment": "ROKA", // string
   "users": [User1, User2], // list of User objects
-  "receipItems": [ReceiptItem1, ReceiptItem2], // list of Item objects
+  "receiptItems": [ReceiptItem1, ReceiptItem2], // list of Item objects
   "currency": "GBP", // string, uses country code
-  "taxPercentage": 0.10, // float, tax on the entire 
+  "charges": 1.30, // float, extra charges
   "totalPrice": 15.74, // float
   "receiptImg": blob // an image blob for the receipt
 }
@@ -33,7 +33,7 @@ The documentation below clarifies the objects.
   "_id": 1, // int, key
   "name": "Bill Gates", // string
   "isPayer": true, // boolean
-  "selectedItems": [itemID1, itemID2] // list of ints, foreign key into item.id
+  "selectedItems": [receiptItemIdx1, receiptItemIdx2] // list of ints which are the indexes of the items selected
 }
 ```
 
@@ -45,7 +45,6 @@ The documentation below clarifies the objects.
   "name": "Apfelstrudel", // string, will be descClean from TabScanner
   "qty": 2, // int
   "price": 6.99, // float
-  "discount": 0.00, // float, discount for this specific item
   "totalPrice": 13.98 // float, is equal to price*qty*(1-discount)
 }
 ```
