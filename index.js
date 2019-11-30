@@ -16,7 +16,7 @@ const port = 8080;
 
 app.use(upload());
 app.use(cookieParser());
-app.use(cors());
+app.use(cors({credentials: true, origin: (origin, cb) => cb(null, true)}));
 // inject the token into req.query
 app.use((req, res, next) => {
 	if (req.cookies.token != null && req.query.token == null) {
