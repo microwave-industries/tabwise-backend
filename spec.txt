@@ -1,0 +1,48 @@
++ /mm
+|
++-+ /create
+| |
+| |- params: name: <user_name>
+| |- returns: {token: <user_token>, code: <readable_code>}
+|
++-+ /join
+  |
+  |- params: code: <readable_code>, name: <user_name>
+  |- returns: {token: <user_token>}
+
+
++ /receipt
+|
++-+ /upload
+| |
+| |- params: file: <file_blob>, token: <user_token>
+| |- returns: {success: <bool>, ?reason: <message>}
+| |- on completion, signals everyone in the room to retrieve from /items
+| |- flags the user as the payer
+|
++-+ /items
+  |
+  |- params: token: <user_token>
+  |- returns: {items: <line_items>}
+
++ /claim
+|
++-+ /submit
+| |
+| |- params: items: [<item_ids>], token: <user_token>
+| |- returns: {success: <bool>}
+| |- signals all endpoints of the selected items
+| |- waits for all endpoints to signal / all items to clear
+|
++-+ /pay
+| |
+| |- params: token: <user_token>
+| |- returns: {payment_url: <truelayer_url>}
+| |- initiates a payment to the payer
+|
++-+ /callback
+  | 
+  |- truelayer callback
+  |- flags the user as settled
+
+question: how signal? websocket, or poll a /updates endpoint?
