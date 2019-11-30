@@ -1,8 +1,11 @@
 const express = require('express');
+const upload = require('express-fileupload');
 const router = express.Router();
 
-router.post('/submit', (req, res) => {
+router.use(upload());
 
+router.post('/submit', (req, res) => {
+	const {options, token} = req.body;
 });
 
 router.get('/pay', (req, res) => {
