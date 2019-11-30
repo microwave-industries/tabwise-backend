@@ -3,7 +3,7 @@ if (process.env.NODE_ENV !== `production`) {
 }
 
 const express = require(`express`)
-const Truelayer = require(`./truelayer-client`)
+const Truelayer = require(`../lib/truelayer-client`)
 
 const router = express.Router()
 
@@ -15,8 +15,12 @@ router.post(`/submit`, async (req, res) => {
 })
 
 router.get(`/pay`, async (req, res) => {
-
-  return `https://monzo.me/leehuey/55.00?d=Bleh`
+  const {
+    monzoUsername,
+    amount,
+    description
+  } = req.query
+  return `https://monzo.me/${monzoUsername}/${amount}?d=${description}`
   console.log(await Truelayer.Auth.getClientCredentialsGrant())
 })
 
