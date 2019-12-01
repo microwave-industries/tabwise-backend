@@ -58,9 +58,10 @@ With 3 easy steps you can get on with your life and do more important things!
 
 ### Step 1. Scan it!
 One person, let's say you, has paid the bill. Simply navigate to our website, and scan the receipt using your phone. No cropping needed, no messing about - just scan it!
+
 | 1 | 2 |3  |
 |---|---|---|
-|<img  src="media/1-start-page.jpeg" height=250/> |<img  src="media/2-take-photo.jpeg" height=250/> | <img  src="media/3-photo-taken.jpeg" height=250/>|
+|![](media/1-start-page.jpeg)|![](media/2-take-photo.jpeg) | ![](media/3-photo-taken.jpeg)|
 
 
 
