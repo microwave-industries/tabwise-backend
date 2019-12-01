@@ -56,9 +56,10 @@
   - [Step 1. Scan it!](#step-1-scan-it)
   - [Step 2. Say it!](#step-2-say-it)
   - [Step 3. Split it!](#step-3-split-it)
+- [Demo](#demo)
 - [Ideas for Improvements](#ideas-for-improvements)
 - [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
+  - [Prerequisites / Dependencies](#prerequisites--dependencies)
   - [Installation](#installation)
 - [Contributing](#contributing)
 - [License](#license)
@@ -69,22 +70,22 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+- add some nice screenshot of the whole thing here
 
 
 
 ### Built With
 
-<a href="[www.nodejs.org](https://nodejs.org/en/)" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1180px-Node.js_logo.svg.png" height="65"></a>  
-<a href="w[ww.nodejs.org](http://mongodb.com)" target="_blank"><img src="https://webassets.mongodb.com/_com_assets/cms/MongoDB_Logo_FullColorBlack_RGB-4td3yuxzjs.png" height="60"></a>  
-<a href="http://tabscanner.com" target="_blank"><img src="https://tabscanner.com/wp-content/uploads/2018/09/tab-scanner-logo-cropped.png" height="45"></a>
-
+<a href="https://nodejs.org/en/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1180px-Node.js_logo.svg.png" height="65"></a>  
+<a href="http://mongodb.com" target="_blank"><img src="https://webassets.mongodb.com/_com_assets/cms/MongoDB_Logo_FullColorBlack_RGB-4td3yuxzjs.png" height="60"></a>  
+<a href="http://tabscanner.com" target="_blank"><img src="https://tabscanner.com/wp-content/uploads/2018/09/tab-scanner-logo-cropped.png" height="45"></a>  
+<a href="https://monzo.com" target="_blank"><img src="images/monzo.png" height="60"></a>
 <!-- USAGE EXAMPLES -->
 ## How it Works
 
 Imagine you're at a restaurant with a large group of people. One ordered a Carbonara and a glass of Sauvignon Blanc. Another ordered a Flat Iron Steak and a Malbec. Someone else ordered a basket of Chicken Wings and split it with three other people. You shared a bottle of Prosecco with two other people. The list goes on...
 
-How do you split it!?
+*How do you split it!?*
 
 Here are your options:  
 A. Just split it equally amongst yourselves.  
@@ -99,11 +100,22 @@ With 3 easy steps you can get on with your life and do more important things!
 ### Step 1. Scan it!
 One person, let's say you, has paid the bill. Simply navigate to our website, and scan the receipt using your phone. No cropping needed, no messing about - just scan it!
 
+- TODO: insert screenshot here
+
 ### Step 2. Say it!
 We'll give you a simple, readable and sayable link. Get your friends to visit the link by simply saying it out loud!
 
+- TODO: insert screenshot here
+
 ### Step 3. Split it!
 On the website, everyone selects the receipt items that they were involved in. Once we verify that everything tallies, everyone gets a unique, customised link to pay you exactly what they owe you!
+
+- TODO: insert screenshot here
+
+## Demo
+
+- get some screenshots
+- take a video and make some simple gifs
 
 <!-- ROADMAP -->
 ## Ideas for Improvements
@@ -114,24 +126,33 @@ We are not currently actively developing this, but here are some of our ideas to
 
 - Enable more granular splitting (e.g. a bottle of wine being split into 1/3 and 2/3 instead of half-half)
 - Integrate with SplitWise
-- Integrate with other banks
+- Integrate with and support other banks
+- Allow for persistent accounts (while continuing to support users who don't have accounts)
+- Universal payment service that is not dependent on individual banks
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
 To get a local copy up and running follow these simple steps.
 
-### Prerequisites
+### Prerequisites / Dependencies
 
 This is an example of how to list things you need to use the software and how to install them.
 * npm
 ```sh
 npm install npm@latest -g
 ```
+* API key for TabScanner  
+
+Just go [here](https://admin.tabscanner.com/register) and sign up for a free account to get an API key.
+
+* Monzo account for the original payer
+
+Just go [here](https://monzo.com) and sign up for a free account.
 
 ### Installation
  
-1. Clone the hack-kings-6.0
+1. Clone the repo
 ```sh
 git clone https://github.com/hivestrung/hack-kings-6.0.git
 ```
@@ -139,7 +160,7 @@ git clone https://github.com/hivestrung/hack-kings-6.0.git
 ```sh
 npm install
 ```
-
+3. 
 
 
 
