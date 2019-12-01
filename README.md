@@ -58,7 +58,8 @@ With 3 easy steps you can get on with your life and do more important things!
 ### Step 1. Scan it!
 One person, let's say you, has paid the bill. Simply navigate to our website, and scan the receipt using your phone. No cropping needed, no messing about - just scan it!
 
-- TODO: insert screenshot here
+![Click "start a tab"](images/step1.jpeg)
+![Scan it!](images/step2.jpeg)
 
 ### Step 2. Say it!
 We'll give you a simple, readable and sayable link. Get your friends to visit the link by simply saying it out loud!
