@@ -35,13 +35,12 @@
 <br />
 <p align="center">
   <a href="https://github.com/hivestrung/hack-kings-6.0">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/logo.png" alt="Logo" width="80" height="134">
   </a>
+  <h2 align="center">TabWise</h3>
 
-  <h3 align="center">TabWise</h3>
-
-  <p align="center">
-    Scan it, say it, split it!
+  <h3 align="center">
+    Scan it, Say it, Split it!
   </p>
 </p>
 
@@ -53,15 +52,17 @@
 - [Table of Contents](#table-of-contents)
 - [About The Project](#about-the-project)
   - [Built With](#built-with)
+- [How it Works](#how-it-works)
+  - [Step 1. Scan it!](#step-1-scan-it)
+  - [Step 2. Say it!](#step-2-say-it)
+  - [Step 3. Split it!](#step-3-split-it)
+- [Ideas for Improvements](#ideas-for-improvements)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
-- [Usage](#usage)
-- [Roadmap](#roadmap)
 - [Contributing](#contributing)
 - [License](#license)
-- [Contact](#contact)
-- [Acknowledgements](#acknowledgements)
+- [Contact & Acknowledgements](#contact--acknowledgements)
 
 
 
@@ -74,12 +75,46 @@
 
 ### Built With
 
-* [Node JS](https://nodejs.org/en/)
-* [MongoDB](http://mongodb.com)
-* [TabScanner](http://tabscanner.com)
-* []()
+<a href="[www.nodejs.org](https://nodejs.org/en/)" target="_blank"><img src="https://nodejs.org/static/images/logo.svg" style="height:65px;"></a>  
+<a href="w[ww.nodejs.org](http://mongodb.com)" target="_blank"><img src="https://webassets.mongodb.com/_com_assets/cms/MongoDB_Logo_FullColorBlack_RGB-4td3yuxzjs.png" style="height:60px;"></a>  
+<a href="http://tabscanner.com" target="_blank"><img src="https://tabscanner.com/wp-content/uploads/2018/09/tab-scanner-logo-cropped.png" style="height:45px;"></a>
 
+<!-- USAGE EXAMPLES -->
+## How it Works
 
+Imagine you're at a restaurant with a large group of people. One ordered a Carbonara and a glass of Sauvignon Blanc. Another ordered a Flat Iron Steak and a Malbec. Someone else ordered a basket of Chicken Wings and split it with three other people. You shared a bottle of Prosecco with two other people. The list goes on...
+
+How do you split it!?
+
+Here are your options:  
+A. Just split it equally amongst yourselves.  
+B. Manually calculate everything and add it into SplitWise or some expenses sharing app. 
+
+A is not always going to be fair, and B is tedious.
+
+Enter `TabWise`, an end-to-end solution to this age-old problem!
+
+With 3 easy steps you can get on with your life and do more important things!
+
+### Step 1. Scan it!
+One person, let's say you, has paid the bill. Simply navigate to our website, and scan the receipt using your phone. No cropping needed, no messing about - just scan it!
+
+### Step 2. Say it!
+We'll give you a simple, readable and sayable link. Get your friends to visit the link by simply saying it out loud!
+
+### Step 3. Split it!
+On the website, everyone selects the receipt items that they were involved in. Once we verify that everything tallies, everyone gets a unique, customised link to pay you exactly what they owe you!
+
+<!-- ROADMAP -->
+## Ideas for Improvements
+
+<!-- See the [open issues](https://github.com/hivestrung/hack-kings-6.0/issues) for a list of proposed features (and known issues). -->
+
+We are not currently actively developing this, but here are some of our ideas to take this idea further.
+
+- Enable more granular splitting (e.g. a bottle of wine being split into 1/3 and 2/3 instead of half-half)
+- Integrate with SplitWise
+- Integrate with other banks
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -107,21 +142,6 @@ npm install
 
 
 
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-See the [open issues](https://github.com/hivestrung/hack-kings-6.0/issues) for a list of proposed features (and known issues).
-
-
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -135,7 +155,6 @@ Contributions are what make the open source community such an amazing place to b
 5. Open a Pull Request
 
 
-
 <!-- LICENSE -->
 ## License
 
@@ -144,39 +163,10 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 
 <!-- CONTACT -->
-## Contact
+## Contact & Acknowledgements
 
 [Shiv Godhia](https://github.com/hivestrung)  
 [Huey Lee](https://github.com/hueyy)  
 [Gao Shan Sam](https://github.com/firemansamm)
 
 Project Link: [https://github.com/hivestrung/hack-kings-6.0](https://github.com/hivestrung/hack-kings-6.0)
-
-
-
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-
-* [Shiv Godhia](https://github.com/hivestrung)  
-* [Huey Lee](https://github.com/hueyy)  
-* [Gao Shan Sam](https://github.com/firemansamm)
-
-
-
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=flat-square
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=flat-square
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=flat-square
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=flat-square
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=flat-square
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
