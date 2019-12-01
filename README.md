@@ -83,6 +83,8 @@ We are not currently actively developing this, but here are some of our ideas to
 - Allow for persistent accounts (while continuing to support users who don't have accounts)
 - Universal payment service that is not dependent on individual banks
 
+Have an idea or want to try building one of these features? Feel free to [contribute](#contributing)!
+
 ## Built With
 
 <a href="https://nodejs.org/en/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1180px-Node.js_logo.svg.png" height="75"></a>  
