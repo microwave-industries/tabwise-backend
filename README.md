@@ -1,35 +1,3 @@
-<!--
-*** Thanks for checking out this README Template. If you have a suggestion that would
-*** make this better, please fork the repo and create a pull request or simply open
-*** an issue with the tag "enhancement".
-*** Thanks again! Now go create something AMAZING! :D
-***
-***
-***
-*** To avoid retyping too much info. Do a search and replace for the following:
-*** github_username, repo, twitter_handle, email
--->
-
-
-
-
-
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-<!-- [![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url] -->
-
-
 
 <!-- PROJECT LOGO -->
 <br />
@@ -50,14 +18,13 @@
 ## Table of Contents
 
 - [Table of Contents](#table-of-contents)
-- [About The Project](#about-the-project)
-  - [Built With](#built-with)
+- [In a Nutshell](#in-a-nutshell)
 - [How it Works](#how-it-works)
   - [Step 1. Scan it!](#step-1-scan-it)
   - [Step 2. Say it!](#step-2-say-it)
   - [Step 3. Split it!](#step-3-split-it)
-- [Demo](#demo)
 - [Ideas for Improvements](#ideas-for-improvements)
+- [Built With](#built-with)
 - [Getting Started](#getting-started)
   - [Prerequisites / Dependencies](#prerequisites--dependencies)
   - [Installation](#installation)
@@ -68,18 +35,9 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## In a Nutshell
+TabWise aims to help you split the bill - even faster and simpler than ever before! What we offer that's different from competitors is an end-to-end solution requiring no maths, no user accounts, and promising instant and free payments via card. Interested? Read on to find out more...
 
-- add some nice screenshot of the whole thing here
-
-
-
-### Built With
-
-<a href="https://nodejs.org/en/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1180px-Node.js_logo.svg.png" height="65"></a>  
-<a href="http://mongodb.com" target="_blank"><img src="https://webassets.mongodb.com/_com_assets/cms/MongoDB_Logo_FullColorBlack_RGB-4td3yuxzjs.png" height="60"></a>  
-<a href="http://tabscanner.com" target="_blank"><img src="https://tabscanner.com/wp-content/uploads/2018/09/tab-scanner-logo-cropped.png" height="45"></a>  
-<a href="https://monzo.com" target="_blank"><img src="images/monzo.png" height="60"></a>
 <!-- USAGE EXAMPLES -->
 ## How it Works
 
@@ -112,11 +70,6 @@ On the website, everyone selects the receipt items that they were involved in. O
 
 - TODO: insert screenshot here
 
-## Demo
-
-- get some screenshots
-- take a video and make some simple gifs
-
 <!-- ROADMAP -->
 ## Ideas for Improvements
 
@@ -130,6 +83,13 @@ We are not currently actively developing this, but here are some of our ideas to
 - Allow for persistent accounts (while continuing to support users who don't have accounts)
 - Universal payment service that is not dependent on individual banks
 
+## Built With
+
+<a href="https://nodejs.org/en/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1180px-Node.js_logo.svg.png" height="75"></a>  
+<a href="http://mongodb.com" target="_blank"><img src="https://webassets.mongodb.com/_com_assets/cms/MongoDB_Logo_FullColorBlack_RGB-4td3yuxzjs.png" height="60"></a>  
+<a href="http://tabscanner.com" target="_blank"><img src="https://tabscanner.com/wp-content/uploads/2018/09/tab-scanner-logo-cropped.png" height="45"></a>  
+<a href="https://monzo.com" target="_blank"><img src="images/monzo.png" height="50"></a>
+
 <!-- GETTING STARTED -->
 ## Getting Started
 
@@ -137,7 +97,6 @@ To get a local copy up and running follow these simple steps.
 
 ### Prerequisites / Dependencies
 
-This is an example of how to list things you need to use the software and how to install them.
 * npm
 ```sh
 npm install npm@latest -g
@@ -186,8 +145,15 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact & Acknowledgements
 
-[Shiv Godhia](https://github.com/hivestrung)  
-[Huey Lee](https://github.com/hueyy)  
-[Gao Shan Sam](https://github.com/firemansamm)
 
-Project Link: [https://github.com/hivestrung/hack-kings-6.0](https://github.com/hivestrung/hack-kings-6.0)
+[Gao Shan Sam](https://github.com/firemansamm), [Huey Lee](https://github.com/hueyy) and [Shiv Godhia](https://github.com/hivestrung) built this at Hack King's 6.0.
+
+Thanks go out to [KCL Tech Society](https://kcl.tech/) for organising the hackathon and for providing the space for us to build TabWise!
+
+<a href="https://hackkings.com" target="_blank"><img src="images/hackkings6.png" height="100"></a> 
+
+
+[Project Link][project link]
+
+
+[project link]: https://github.com/hivestrung/hack-kings-6.0
