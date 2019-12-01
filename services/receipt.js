@@ -12,7 +12,8 @@ const cleanItems = (items) => {
 	const qty = parseInt(splitLine[0].match(/\d+/g));
 	const lineTotal = parseFloat(x.lineTotal);
 	const price = lineTotal / qty;
-	const descClean = x.desc.replace(/^\d+x?\s?(.*)(?:\s[0-9\.,]+)?/gm, "$1");
+	const stripEnd = x.desc.replace(/(?:\s[0-9\.,]+)$/gm, '');
+	const descClean = stripEnd.replace(/^\d+x?\s?(.*)/gm, "$1");
 	x.qty = qty;
 	x.price = price;
 	x.lineTotal = lineTotal;
@@ -64,13 +65,12 @@ router.post('/upload', async (req, res) => {
 		date: results.result.dateISO,
 		items,
 		total,
-		charges: results.result.taxes,
+		charges: results.result.taxes.map(k => {return {percentage: Math.round(k * 1000 / results.result.subTotal) / 10, amount: k}}),
 		currency: results.result.currency
 	};
-	const {code, uid} = await db.createRoom(name, data);
+	const code = await db.createRoom(name, data);
 
-	res.cookie('token', uid);
-	res.json({success: true, code, token: uid, items, date: data.date, place: data.place, total: data.total});
+	res.json({success: true, code, items, date: data.date, place: data.place, total: data.total, charges: data.charges});
 });
 
 module.exports = router;
