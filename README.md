@@ -59,22 +59,25 @@ With 3 easy steps you can get on with your life and do more important things!
 ### Step 1. Scan it!
 One person, let's say you, has paid the bill. Simply navigate to our website, and scan the receipt using your phone. No cropping needed, no messing about - just scan it!
 
-<img align="center" src="media/step1.jpeg" height=250/>
-<img align="center" src="media/step2.jpeg" height=250/>
+<img align="center" src="media/1-start-page.jpeg" height=250/>
+<img align="center" src="media/2-take-photo.jpeg" height=250/>
+<img align="center" src="media/3-photo-taken.jpeg" height=250/>
+
 
 
 ### Step 2. Say it!
 We'll give you a simple, readable and sayable link. Get your friends to visit the link by simply saying it out loud!
 
-- TODO: insert screenshot here
+<img align="center" src="media/4-digitised-receipt.jpeg" height=250/>
+<img align="center" src="media/5-receipt-item-selection.jpeg" height=250/>
 
 ### Step 3. Split it!
 On the website, everyone selects the receipt items that they were involved in. Once we verify that everything tallies, everyone gets a unique, customised link to pay you exactly what they owe you!
 
 
-
-<img align="center" src="media/monzo-payment-1.png" height=250/>
-<img align="center" src="media/monzo-payment-2.png" height=250/>
+<img align="center" src="media/6-settle-up.jpeg" height=250/>
+<img align="center" src="media/7-monzo-payment-1.png" height=250/>
+<img align="center" src="media/8-monzo-payment-2.png" height=250/>
 
 ## Demo Video
 
