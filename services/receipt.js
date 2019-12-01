@@ -1,12 +1,9 @@
 const express = require('express');
-const upload = require('express-fileupload');
 const router = express.Router();
 const tabby = require('../lib/tabby');
 const db = require('../lib/db');
 
 tabby.init(process.env.TABSCANNER_API_KEY);
-
-router.use(upload());
 
 const cleanItems = (items) => {
  return items.map(x => {
@@ -15,7 +12,7 @@ const cleanItems = (items) => {
 	const qty = parseInt(splitLine[0].match(/\d+/g));
 	const lineTotal = parseFloat(x.lineTotal);
 	const price = lineTotal / qty;
-	const descClean = x.desc.replace(/^\d+x?\s?(.*)(?:\s[0-9\.]+)?/gm, "$1");
+	const descClean = x.desc.replace(/^\d+x?\s?(.*)(?:\s[0-9\.,]+)?/gm, "$1");
 	x.qty = qty;
 	x.price = price;
 	x.lineTotal = lineTotal;
@@ -54,18 +51,19 @@ router.post('/upload', async (req, res) => {
 	console.log(`received file ${file.name} (${file.size} bytes)`);
 	const token = await tabby.process(file.data, file.name, file.mimetype); 
 	const results = await tabby.results(token);
-	if (results.result.lineItems == null) {
+	if (results.result == null || results.result.lineItems == null) {
 		// forward error response
 		res.json(results);
 	}
-	const items = cleanItems(results.result.lineItems);
+	const total = parseFloat(results.result.total);
+	const items = cleanItems(results.result.lineItems).filter(x => x.lineTotal <= total);
 
 	// create the room
 	const data = {
 		place: results.result.establishment,
 		date: results.result.dateISO,
-		items: items,
-		total: parseFloat(results.result.total),
+		items,
+		total,
 		charges: results.result.taxes,
 		currency: results.result.currency
 	};
