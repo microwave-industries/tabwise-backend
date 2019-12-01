@@ -3,6 +3,7 @@ if (process.env.NODE_ENV !== `production`) {
 }
 
 const express = require(`express`)
+const db = require('../../lib/db')
 const Truelayer = require(`../../lib/truelayer-client`)
 
 const router = express.Router()
@@ -11,6 +12,9 @@ router.use(express.json())
 
 router.post(`/submit`, async (req, res) => {
   const { items, token } = req.body
+	const items_o = JSON.parse(items)
+	const {users} = await db.claimItems(token, items_o)
+	res.json({success: true, users});
   return true
 })
 
