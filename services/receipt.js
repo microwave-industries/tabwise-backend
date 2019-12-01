@@ -13,7 +13,7 @@ const cleanItems = (items) => {
 	const lineTotal = parseFloat(x.lineTotal);
 	const price = lineTotal / qty;
 	const stripEnd = x.desc.replace(/(?:\s[0-9\.,]+)$/gm, '');
-	const descClean = stripEnd.replace(/^\d+x?\s?(.*)/gm, "$1");
+	const descClean = stripEnd.replace(/^\d+x?\s?(.*)/gm, "$1").replace(/[^a-zA-Z0-9 ]/g, '');
 	x.qty = qty;
 	x.price = price;
 	x.lineTotal = lineTotal;
@@ -39,16 +39,36 @@ const cleanItems = (items) => {
  });
 }
 
+const MONZO_FORMAT = 'https://monzo.me/{username}/{amount}?d={desc}';
+const MONZO_REGEX = /^https:\/\/monzo\.me\/([a-zA-Z0-9]+)\/?(.*)$/gi;
+const STARLING_FORMAT = 'https://settleup.starlingbank.com/{username}?amount={amount}&message={desc}';
+const STARLING_REGEX = /^https:\/\/settleup\.starlingbank\.com\/([a-zA-Z0-9]+)\?(.*)$/gi;
+
 router.post('/upload', async (req, res) => {
 	console.log('file upload incoming');
 	const {file} = req.files;
-	const {name} = req.body;
+	const {paymentUrl} = req.body;
 	if (file == null) {
 		res.json({success: false, reason: 'file is missing.'});
 	}
-	if (name == null) {
-		res.json({success: false, reason: 'name is missing'});
+	if (paymentUrl == null) {
+		res.json({success: false, reason: 'paymentUrl is missing'});
 	}
+
+	// parse paymentUrl
+	let name = 'unknown';
+	let templateUrl = '';
+	if (mon = MONZO_REGEX.exec(paymentUrl)) {
+		name = mon[1];
+		templateUrl = MONZO_FORMAT.replace('{username}', name);
+	} else if (star = STARLING_REGEX.exec(paymentUrl)) {
+		name = star[1];
+		templateUrl = STARLING_FORMAT.replace('{username}', name);
+	} else return res.json({success: false, reason: 'unknown payment url type'});
+
+	MONZO_REGEX.exec('');
+	STARLING_REGEX.exec('');
+
 	console.log(`received file ${file.name} (${file.size} bytes)`);
 	const token = await tabby.process(file.data, file.name, file.mimetype); 
 	const results = await tabby.results(token);
@@ -68,9 +88,10 @@ router.post('/upload', async (req, res) => {
 		charges: results.result.taxes.map(k => {return {percentage: Math.round(k * 1000 / results.result.subTotal) / 10, amount: k}}),
 		currency: results.result.currency
 	};
-	const code = await db.createRoom(name, data);
-
-	res.json({success: true, code, items, date: data.date, place: data.place, total: data.total, charges: data.charges});
+	const {uid, code} = await db.createRoom(name, data, templateUrl);
+	
+	res.cookie('token', uid);
+	res.json({success: true, token: uid, code, items, date: data.date, place: data.place, total: data.total, charges: data.charges});
 });
 
 module.exports = router;
