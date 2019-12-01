@@ -39,7 +39,14 @@ router.get(`/pay`, async (req, res) => {
 	const description = encodeURIComponent(`${place} - ${me.name}`)
 
 	const template = await db.getPaymentInfo(token)
-	res.json({success: true, url: template.replace('{amount}', amount).replace('{desc}', description)});
+	res.json({
+		success: true,
+		url: template.replace('{amount}', amount).replace('{desc}', description),
+		subTotal,
+		items: me.items.map(x => items[x]),
+		charges: chargeSub,
+		amount
+	});
   //console.log(await Truelayer.Auth.getClientCredentialsGrant())
 })
 
