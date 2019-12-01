@@ -150,7 +150,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Thanks go out to [KCL Tech Society](https://kcl.tech/) for organising the hackathon and for providing the space for us to build TabWise!
 
-<a href="https://hackkings.com" target="_blank"><img src="images/hackkings6.png" height="100"></a> 
+<a href="https://hackkings.org" target="_blank"><img src="images/hackkings6.png" height="100"></a> 
 
 
 [Project Link][project link]
