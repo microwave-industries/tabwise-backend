@@ -74,9 +74,9 @@
 
 
 ### Built With
-[![Node JS](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1180px-Node.js_logo.svg.png)](https://nodejs.org/en)
+[![Node JS](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1180px-Node.js_logo.svg.png | height=40)](https://nodejs.org/en)
 
-<a href="[www.nodejs.org](https://nodejs.org/en/)" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1180px-Node.js_logo.svg.png" style="height:65px;"></a>  
+<a href="[www.nodejs.org](https://nodejs.org/en/)" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1180px-Node.js_logo.svg.png" height="65"></a>  
 <a href="w[ww.nodejs.org](http://mongodb.com)" target="_blank"><img src="https://webassets.mongodb.com/_com_assets/cms/MongoDB_Logo_FullColorBlack_RGB-4td3yuxzjs.png" style="height:60px;"></a>  
 <a href="http://tabscanner.com" target="_blank"><img src="https://tabscanner.com/wp-content/uploads/2018/09/tab-scanner-logo-cropped.png" style="height:45px;"></a>
 
