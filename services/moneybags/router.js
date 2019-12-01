@@ -27,18 +27,25 @@ router.post(`/submit`, async (req, res) => {
 
 router.get(`/pay`, async (req, res) => {
 	const token = req.body.token || req.cookies.token;
-  const {
-    amount,
-    description
-  } = req.query
-  const template = await db.getPaymentInfo(token)
+
+	// compute totals
+	const {place, items, users, charges} = await db.queryRoom(token);
+	const me = users.filter(x => x.uid === token)[0]
+	const localSubTotal = me.items.map(x => items[x].price).reduce((x, y) => x + y, 0);
+	const subTotal = items.map(x => x.lineTotal).reduce((x, y) => x + y, 0);
+	const perc = localSubTotal / subTotal;
+	const chargeSub = charges.map(x => (Math.round(100 * x.amount * perc) / 100));
+	const amount = localSubTotal + chargeSub.reduce((x, y) => x + y, 0);
+	const description = encodeURIComponent(`${place} - ${me.name}`)
+
+	const template = await db.getPaymentInfo(token)
 	res.json({success: true, url: template.replace('{amount}', amount).replace('{desc}', description)});
   //console.log(await Truelayer.Auth.getClientCredentialsGrant())
 })
 
-router.get('/details', async (req, res) => {
+router.put('/details', async (req, res) => {
 	const token = req.body.token || req.cookies.token;
-	const { paymentUrl } = req.query;
+	const { paymentUrl } = req.body;
 	if (mon = MONZO_REGEX.exec(paymentUrl)) {
 			const username = mon[1];
 			await db.attachPaymentInfo(token, MONZO_FORMAT.replace('{username}', username));
