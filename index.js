@@ -19,10 +19,12 @@ app.use(cookieParser());
 app.use(cors({credentials: true, origin: (origin, cb) => cb(null, true)}));
 // inject the token into req.query
 app.use((req, res, next) => {
+console.log(req.cookies);
 	if (req.cookies.token != null && req.query.token == null) {
 		req.query.token = req.cookies.token;
 		console.log('injecting into query');
-		if (req.body != null && req.body.token == null) {
+		if (req.body == null) req.body = {};
+		if (req.body.token == null) {
 			console.log('injecting into body');
 			req.body.token = req.cookies.token;
 		}
