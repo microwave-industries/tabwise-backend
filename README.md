@@ -1,47 +1,14 @@
-<!--
-*** Thanks for checking out this README Template. If you have a suggestion that would
-*** make this better, please fork the repo and create a pull request or simply open
-*** an issue with the tag "enhancement".
-*** Thanks again! Now go create something AMAZING! :D
-***
-***
-***
-*** To avoid retyping too much info. Do a search and replace for the following:
-*** github_username, repo, twitter_handle, email
--->
-
-
-
-
-
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-<!-- [![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url] -->
-
-
 
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
   <a href="https://github.com/hivestrung/hack-kings-6.0">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/logo.png" alt="Logo" width="80" height="134">
   </a>
+  <h2 align="center">TabWise</h3>
 
-  <h3 align="center">TabWise</h3>
-
-  <p align="center">
-    Scan it, say it, split it!
+  <h3 align="center">
+    Scan it, Say it, Split it!
   </p>
 </p>
 
@@ -51,52 +18,102 @@
 ## Table of Contents
 
 - [Table of Contents](#table-of-contents)
-- [About The Project](#about-the-project)
-  - [Built With](#built-with)
+- [In a Nutshell](#in-a-nutshell)
+- [How it Works](#how-it-works)
+  - [Step 1. Scan it!](#step-1-scan-it)
+  - [Step 2. Say it!](#step-2-say-it)
+  - [Step 3. Split it!](#step-3-split-it)
+- [Ideas for Improvements](#ideas-for-improvements)
+- [Built With](#built-with)
 - [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
+  - [Prerequisites / Dependencies](#prerequisites--dependencies)
   - [Installation](#installation)
-- [Usage](#usage)
-- [Roadmap](#roadmap)
 - [Contributing](#contributing)
 - [License](#license)
-- [Contact](#contact)
-- [Acknowledgements](#acknowledgements)
+- [Contact & Acknowledgements](#contact--acknowledgements)
 
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## In a Nutshell
+TabWise aims to help you split the bill - even faster and simpler than ever before! What we offer that's different from competitors is an end-to-end solution requiring no maths, no user accounts, and promising instant and free payments via card. Interested? Read on to find out more...
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+<!-- USAGE EXAMPLES -->
+## How it Works
 
+Imagine you're at a restaurant with a large group of people. One ordered a Carbonara and a glass of Sauvignon Blanc. Another ordered a Flat Iron Steak and a Malbec. Someone else ordered a basket of Chicken Wings and split it with three other people. You shared a bottle of Prosecco with two other people. The list goes on...
 
+*How do you split it!?*
 
-### Built With
+Here are your options:  
+A. Just split it equally amongst yourselves.  
+B. Manually calculate everything and add it into SplitWise or some expenses sharing app. 
 
-* [Node JS](https://nodejs.org/en/)
-* [MongoDB](http://mongodb.com)
-* [TabScanner](http://tabscanner.com)
-* []()
+A is not always going to be fair, and B is tedious.
 
+Enter `TabWise`, an end-to-end solution to this age-old problem!
 
+With 3 easy steps you can get on with your life and do more important things!
+
+### Step 1. Scan it!
+One person, let's say you, has paid the bill. Simply navigate to our website, and scan the receipt using your phone. No cropping needed, no messing about - just scan it!
+
+- TODO: insert screenshot here
+
+### Step 2. Say it!
+We'll give you a simple, readable and sayable link. Get your friends to visit the link by simply saying it out loud!
+
+- TODO: insert screenshot here
+
+### Step 3. Split it!
+On the website, everyone selects the receipt items that they were involved in. Once we verify that everything tallies, everyone gets a unique, customised link to pay you exactly what they owe you!
+
+- TODO: insert screenshot here
+
+<!-- ROADMAP -->
+## Ideas for Improvements
+
+<!-- See the [open issues](https://github.com/hivestrung/hack-kings-6.0/issues) for a list of proposed features (and known issues). -->
+
+We are not currently actively developing this, but here are some of our ideas to take this idea further.
+
+- Enable more granular splitting (e.g. a bottle of wine being split into 1/3 and 2/3 instead of half-half)
+- Integrate with SplitWise
+- Integrate with and support other banks
+- Allow for persistent accounts (while continuing to support users who don't have accounts)
+- Universal payment service that is not dependent on individual banks
+
+Have an idea or want to try building one of these features? Feel free to [contribute](#contributing)!
+
+## Built With
+
+<a href="https://nodejs.org/en/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1180px-Node.js_logo.svg.png" height="75"></a>  
+<a href="http://mongodb.com" target="_blank"><img src="https://webassets.mongodb.com/_com_assets/cms/MongoDB_Logo_FullColorBlack_RGB-4td3yuxzjs.png" height="60"></a>  
+<a href="http://tabscanner.com" target="_blank"><img src="https://tabscanner.com/wp-content/uploads/2018/09/tab-scanner-logo-cropped.png" height="45"></a>  
+<a href="https://monzo.com" target="_blank"><img src="images/monzo.png" height="50"></a>
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
 To get a local copy up and running follow these simple steps.
 
-### Prerequisites
+### Prerequisites / Dependencies
 
-This is an example of how to list things you need to use the software and how to install them.
 * npm
 ```sh
 npm install npm@latest -g
 ```
+* API key for TabScanner  
+
+Just go [here](https://admin.tabscanner.com/register) and sign up for a free account to get an API key.
+
+* Monzo account for the original payer
+
+Just go [here](https://monzo.com) and sign up for a free account.
 
 ### Installation
  
-1. Clone the hack-kings-6.0
+1. Clone the repo
 ```sh
 git clone https://github.com/hivestrung/hack-kings-6.0.git
 ```
@@ -104,22 +121,7 @@ git clone https://github.com/hivestrung/hack-kings-6.0.git
 ```sh
 npm install
 ```
-
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-See the [open issues](https://github.com/hivestrung/hack-kings-6.0/issues) for a list of proposed features (and known issues).
+3. 
 
 
 
@@ -135,7 +137,6 @@ Contributions are what make the open source community such an amazing place to b
 5. Open a Pull Request
 
 
-
 <!-- LICENSE -->
 ## License
 
@@ -144,39 +145,17 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 
 <!-- CONTACT -->
-## Contact
-
-[Shiv Godhia](https://github.com/hivestrung)  
-[Huey Lee](https://github.com/hueyy)  
-[Gao Shan Sam](https://github.com/firemansamm)
-
-Project Link: [https://github.com/hivestrung/hack-kings-6.0](https://github.com/hivestrung/hack-kings-6.0)
+## Contact & Acknowledgements
 
 
+[Gao Shan Sam](https://github.com/firemansamm), [Huey Lee](https://github.com/hueyy) and [Shiv Godhia](https://github.com/hivestrung) built this at Hack King's 6.0.
 
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
+Thanks go out to [KCL Tech Society](https://kcl.tech/) for organising the hackathon and for providing the space for us to build TabWise!
 
-* [Shiv Godhia](https://github.com/hivestrung)  
-* [Huey Lee](https://github.com/hueyy)  
-* [Gao Shan Sam](https://github.com/firemansamm)
+<a href="https://hackkings.org" target="_blank"><img src="images/hackkings6.png" height="100"></a> 
 
 
+[Project Link][project link]
 
 
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=flat-square
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=flat-square
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=flat-square
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=flat-square
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=flat-square
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
+[project link]: https://github.com/hivestrung/hack-kings-6.0
