@@ -68,21 +68,24 @@ One person, let's say you, has paid the bill. Simply navigate to our website, an
 
 
 ### Step 2. Say it!
-We'll give you a simple, readable and sayable link. Get your friends to visit the link by simply saying it out loud!
+We'll create a room with your digitised receipt and give you a simple, readable and sayable code (shortcode). Say it out loud so your friends can join the room!
 
-<img align="center" src="media/4-digitised-receipt.jpeg" height=250/>
-<img align="center" src="media/5-receipt-item-selection.jpeg" height=250/>
+On the website, everyone selects the receipt items that they were involved in.
+
+| Digitised Receipt, room code is poetic-tail | Select the receipt items you were involved in |
+|---|---|
+|![](media/4-digitised-receipt.jpeg)|![](media/5-receipt-item-selection.jpeg)|
+
 
 ### Step 3. Split it!
-On the website, everyone selects the receipt items that they were involved in. Once we verify that everything tallies, everyone gets a unique, customised link to pay you exactly what they owe you!
+Once we verify that everything tallies, everyone gets a unique, customised link to pay you exactly what they owe you!
 
+| Summary and payment link generated | Pre-filled with restaurant and payer name | Simple, free credit card payment |
+|---|---|---|
+|![](media/6-settle-up.jpeg)|![](media/7-monzo-payment-1.png) | ![](media/8-monzo-payment-2.png)|
 
-<img align="center" src="media/6-settle-up.jpeg" height=250/>
-<img align="center" src="media/7-monzo-payment-1.png" height=250/>
-<img align="center" src="media/8-monzo-payment-2.png" height=250/>
 
 ## Demo Video
-
 
 [Click here to watch](media/tabwise-demo-video.mov)
 
