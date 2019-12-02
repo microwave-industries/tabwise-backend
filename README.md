@@ -85,7 +85,7 @@ Now, everyone selects the receipt items that they were involved in. Once we veri
 [Click here to watch](media/tabwise-demo-video.mov)
 
 <!-- ROADMAP -->
-## Ideas for Improvements
+## Roadmap
 
 <!-- See the [open issues](https://github.com/hivestrung/hack-kings-6.0/issues) for a list of proposed features (and known issues). -->
 
