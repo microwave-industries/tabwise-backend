@@ -156,7 +156,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Thanks go out to [KCL Tech Society](https://kcl.tech/) for organising the hackathon and for providing the space for us to build TabWise!
 
-<a href="https://hackkings.org" target="_blank" align="centre"><img src="media/hackkings6.png" height="100"></a> 
+<a href="https://hackkings.org" target="_blank"><img src="media/hackkings6.png" height="100"  align="center"></a> 
 
 Thanks also to [Capital One](https://www.capitalone.co.uk) for sponsoring the hackathon, and for recognising us as the winners of the Capital One Challenge (Change Finance for Good)!
 
