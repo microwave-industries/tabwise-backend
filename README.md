@@ -87,7 +87,7 @@ Now, everyone selects the receipt items that they were involved in. Once we veri
 <!-- ROADMAP -->
 ## Roadmap
 
-<!-- See the [open issues](https://github.com/hivestrung/hack-kings-6.0/issues) for a list of proposed features (and known issues). -->
+<!-- See the [open issues](https://github.com/microwave-industries/hack-kings-6.0/issues) for a list of proposed features (and known issues). -->
 
 We are not currently actively developing this, but here are some of our ideas to take this idea further.
 
@@ -163,4 +163,5 @@ Thanks also to [Capital One](https://www.capitalone.co.uk) for sponsoring the ha
 
 Our project is also on [Devpost](https://devpost.com/software/tabwise-scan-it-say-it-split-it)
 
-[GitHub link to Tabwise][https://github.com/hivestrung/tabwise-backend]
+[GitHub link to backend for TabWise](https://github.com/microwave-industries/tabwise-backend)
+[Github link to frontend for TabWise](https://github.com/microwave-industries/tabwise-frontend)
