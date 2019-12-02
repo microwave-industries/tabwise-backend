@@ -161,8 +161,6 @@ Thanks go out to [KCL Tech Society](https://kcl.tech/) for organising the hackat
 
 Thanks also to [Capital One](https://www.capitalone.co.uk) for sponsoring the hackathon, and for recognising us as the winners of the Capital One Challenge (Change Finance for Good)!
 
+Our project is also on [Devpost](https://devpost.com/software/tabwise-scan-it-say-it-split-it)
 
-[Project Link][project link]
-
-
-[project link]: https://github.com/hivestrung/hack-kings-6.0
+[GitHub link to Tabwise][https://github.com/hivestrung/tabwise-backend]
