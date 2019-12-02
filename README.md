@@ -70,7 +70,6 @@ One person, let's say you, has paid the bill. Simply navigate to our website, an
 ### Step 2. Say it!
 We'll create a room with your digitised receipt and give you a simple, readable and sayable code (shortcode). Say it out loud so your friends can join the room!
 
-On the website, everyone selects the receipt items that they were involved in.
 
 | Digitised Receipt, room code is poetic-tail | Select the receipt items you were involved in |
 |---|---|
@@ -78,7 +77,7 @@ On the website, everyone selects the receipt items that they were involved in.
 
 
 ### Step 3. Split it!
-Once we verify that everything tallies, everyone gets a unique, customised link to pay you exactly what they owe you!
+Now, everyone selects the receipt items that they were involved in. Once we verify that everything tallies, everyone gets a unique, customised link to pay you exactly what they owe you!
 
 | Summary and payment link generated | Pre-filled with restaurant and payer name | Simple, free credit card payment |
 |---|---|---|
