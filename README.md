@@ -1,15 +1,12 @@
-
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
   <a href="https://github.com/hivestrung/hack-kings-6.0">
-    <img src="media/logo.png" alt="Logo" width="80" height="134">
+    <img src="media/logo.png" alt="Logo" height="134">
   </a>
-  <h2 align="center">TabWise</h3>
-
-  <h3 align="center">
-    Scan it, Say it, Split it!
-  </p>
+  <h1 align="center">TabWise</h1>
+  <h2 align="center">Scan it, Say it, Split it!</h2>
+  <p align="center"><i>Winners of the Capital One Challenge (Change Finance for Good) at Hack King's 6.0</i></p>
 </p>
 
 
@@ -28,7 +25,6 @@
 - [Built With](#built-with)
 - [Getting Started](#getting-started)
   - [Prerequisites / Dependencies](#prerequisites--dependencies)
-  - [Installation](#installation)
 - [Contributing](#contributing)
 - [License](#license)
 - [Contact & Acknowledgements](#contact--acknowledgements)
@@ -108,7 +104,9 @@ Have an idea or want to try building one of these features? Feel free to [contri
 <a href="https://nodejs.org/en/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1180px-Node.js_logo.svg.png" height="75"></a>  
 <a href="http://mongodb.com" target="_blank"><img src="https://webassets.mongodb.com/_com_assets/cms/MongoDB_Logo_FullColorBlack_RGB-4td3yuxzjs.png" height="60"></a>  
 <a href="http://tabscanner.com" target="_blank"><img src="https://tabscanner.com/wp-content/uploads/2018/09/tab-scanner-logo-cropped.png" height="45"></a>  
-<a href="https://monzo.com" target="_blank"><img src="media/monzo.png" height="50"></a>
+<a href="https://monzo.com" target="_blank"><img src="media/monzo.png" height="50"></a>  
+<a href="https://www.gatsbyjs.org"><img src="https://www.gatsbyjs.org/Gatsby-Logo.svg" height="50"></a>  
+<a href="https://expressjs.com"><img src="https://buttercms.com/static/images/tech_banners/ExpressJS.8587dd0647ca.png" height="50"></a>  
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -128,18 +126,6 @@ Just go [here](https://admin.tabscanner.com/register) and sign up for a free acc
 * Monzo account for the original payer
 
 Just go [here](https://monzo.com) and sign up for a free account.
-
-### Installation
- 
-1. Clone the repo
-```sh
-git clone https://github.com/hivestrung/hack-kings-6.0.git
-```
-2. Install NPM packages
-```sh
-npm install
-```
-3. 
 
 
 
@@ -171,6 +157,8 @@ Distributed under the MIT License. See `LICENSE` for more information.
 Thanks go out to [KCL Tech Society](https://kcl.tech/) for organising the hackathon and for providing the space for us to build TabWise!
 
 <a href="https://hackkings.org" target="_blank"><img src="media/hackkings6.png" height="100"></a> 
+
+Thanks also to [Capital One](https://www.capitalone.co.uk) for sponsoring the hackathon, and for recognising us as the winners of the Capital One Challenge (Change Finance for Good)!
 
 
 [Project Link][project link]
