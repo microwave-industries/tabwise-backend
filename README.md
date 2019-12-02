@@ -3,7 +3,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/hivestrung/hack-kings-6.0">
-    <img src="images/logo.png" alt="Logo" width="80" height="134">
+    <img src="media/logo.png" alt="Logo" width="80" height="134">
   </a>
   <h2 align="center">TabWise</h3>
 
@@ -23,6 +23,7 @@
   - [Step 1. Scan it!](#step-1-scan-it)
   - [Step 2. Say it!](#step-2-say-it)
   - [Step 3. Split it!](#step-3-split-it)
+- [Demo Video](#demo-video)
 - [Ideas for Improvements](#ideas-for-improvements)
 - [Built With](#built-with)
 - [Getting Started](#getting-started)
@@ -58,18 +59,35 @@ With 3 easy steps you can get on with your life and do more important things!
 ### Step 1. Scan it!
 One person, let's say you, has paid the bill. Simply navigate to our website, and scan the receipt using your phone. No cropping needed, no messing about - just scan it!
 
-![Click "start a tab"](images/step1.jpeg)
-![Scan it!](images/step2.jpeg)
+| Click "start a tab" | Scan it! | Analysing receipt... |
+|---|---|---|
+|![](media/1-start-page.jpeg)|![](media/2-take-photo.jpeg) | ![](media/3-photo-taken.jpeg)|
+
+
+
+
 
 ### Step 2. Say it!
-We'll give you a simple, readable and sayable link. Get your friends to visit the link by simply saying it out loud!
+We'll create a room with your digitised receipt and give you a simple, readable and sayable code (shortcode). Say it out loud so your friends can join the room!
 
-- TODO: insert screenshot here
+On the website, everyone selects the receipt items that they were involved in.
+
+| Digitised Receipt, room code is poetic-tail | Select the receipt items you were involved in |
+|---|---|
+|![](media/4-digitised-receipt.jpeg)|![](media/5-receipt-item-selection.jpeg)|
+
 
 ### Step 3. Split it!
-On the website, everyone selects the receipt items that they were involved in. Once we verify that everything tallies, everyone gets a unique, customised link to pay you exactly what they owe you!
+Once we verify that everything tallies, everyone gets a unique, customised link to pay you exactly what they owe you!
 
-- TODO: insert screenshot here
+| Summary and payment link generated | Pre-filled with restaurant and payer name | Simple, free credit card payment |
+|---|---|---|
+|![](media/6-settle-up.jpeg)|![](media/7-monzo-payment-1.png) | ![](media/8-monzo-payment-2.png)|
+
+
+## Demo Video
+
+[Click here to watch](media/tabwise-demo-video.mov)
 
 <!-- ROADMAP -->
 ## Ideas for Improvements
@@ -91,7 +109,7 @@ Have an idea or want to try building one of these features? Feel free to [contri
 <a href="https://nodejs.org/en/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1180px-Node.js_logo.svg.png" height="75"></a>  
 <a href="http://mongodb.com" target="_blank"><img src="https://webassets.mongodb.com/_com_assets/cms/MongoDB_Logo_FullColorBlack_RGB-4td3yuxzjs.png" height="60"></a>  
 <a href="http://tabscanner.com" target="_blank"><img src="https://tabscanner.com/wp-content/uploads/2018/09/tab-scanner-logo-cropped.png" height="45"></a>  
-<a href="https://monzo.com" target="_blank"><img src="images/monzo.png" height="50"></a>
+<a href="https://monzo.com" target="_blank"><img src="media/monzo.png" height="50"></a>
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -153,7 +171,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Thanks go out to [KCL Tech Society](https://kcl.tech/) for organising the hackathon and for providing the space for us to build TabWise!
 
-<a href="https://hackkings.org" target="_blank"><img src="images/hackkings6.png" height="100"></a> 
+<a href="https://hackkings.org" target="_blank"><img src="media/hackkings6.png" height="100"></a> 
 
 
 [Project Link][project link]
