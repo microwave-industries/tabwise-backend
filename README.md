@@ -21,7 +21,7 @@
   - [Step 2. Say it!](#step-2-say-it)
   - [Step 3. Split it!](#step-3-split-it)
 - [Demo Video](#demo-video)
-- [Ideas for Improvements](#ideas-for-improvements)
+- [Roadmap](#roadmap)
 - [Built With](#built-with)
 - [Getting Started](#getting-started)
   - [Prerequisites / Dependencies](#prerequisites--dependencies)
